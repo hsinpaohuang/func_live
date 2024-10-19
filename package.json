@@ -5,7 +5,9 @@
     "dev": "nitro dev",
     "prepare": "nitro prepare",
     "preview": "pnpm build && node .output/server/index.mjs",
-    "test": "vitest --watch"
+    "test": "vitest --watch",
+    "test:ci": "vitest",
+    "deploy:vercel": "PRESET=VERCEL pnpm build"
   },
   "type": "module",
   "devDependencies": {
