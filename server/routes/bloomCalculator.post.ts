@@ -15,7 +15,7 @@ const inputSchema = z.object(
           .int({ message: 'must be an integer' })
           .min(1, { message: 'must be greater than 0' }),
         p: z // false positive rate
-          .number({ message: 'must be an integer' })
+          .number({ message: 'must be a number' })
           .gt(0, { message: 'must be greater than 0' })
           .lte(1, { message: 'must be less than or equal to 1' }),
       },
